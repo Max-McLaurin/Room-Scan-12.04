@@ -1,0 +1,317 @@
+INFO:asset_detection.yoloe_detector:Using device: mps
+INFO:asset_detection.yoloe_detector:Model loaded from: models/yoloe-11m-seg.pt
+
+============================================================
+🚀 Room Scanner Flask App Starting...
+============================================================
+Service Available: True
+OpenAI Key Set: True
+============================================================
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:asset_detection.yoloe_detector:Using device: mps
+INFO:asset_detection.yoloe_detector:Model loaded from: models/yoloe-11m-seg.pt
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-898-432
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:35:20] "GET /health HTTP/1.1" 200 -
+INFO:asset_detection.yoloe_detector:Loading model for prompt type: free
+INFO:asset_detection.yoloe_detector:Model loaded from: models/yoloe-11m-seg-pf.pt
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:35:36] "POST /upload HTTP/1.1" 200 -
+
+============================================================
+🚀 Room Scanner Flask App Starting...
+============================================================
+Service Available: True
+OpenAI Key Set: True
+============================================================
+
+
+============================================================
+Processing uploaded file: kitchen23.jpg
+============================================================
+
+Processing: uploads/kitchen23.jpg
+YOLOe detected 41 objects
+Filtered 41 detections down to 41 unique objects (IoU threshold: 0.5)
+Found 41 objects, classifying with OpenAI...
+✓ OpenAI classified object 32: Ceiling Light ($150 ± 50)
+✓ OpenAI classified object 30: Refrigerator ($1500 ± 50)
+✓ OpenAI classified object 28: Cabinet ($300 ± 50)
+✓ OpenAI classified object 15: Cabinet ($300 ± 50)
+✓ OpenAI classified object 22: Rolling Pins ($30 ± 50)
+✓ OpenAI classified object 27: Table Setting ($50 ± 50)
+✓ OpenAI classified object 31: Pumpkin ($10 ± 50)
+✓ OpenAI classified object 20: Cabinet ($300 ± 50)
+✓ OpenAI classified object 13: Ceramic Bottle ($25 ± 50)
+✓ OpenAI classified object 29: Gas Stove ($800 ± 50)
+✓ OpenAI classified object 33: Kitchen Island ($1200 ± 50)
+✓ OpenAI classified object 18: Colander ($25 ± 50)
+✓ OpenAI classified object 9: Cabinet Door ($150 ± 50)
+✓ OpenAI classified object 12: Bar Stools ($150 ± 50)
+✓ OpenAI classified object 21: Countertop ($1500 ± 50)
+✓ OpenAI classified object 23: Sealant Tube ($10 ± 50)
+✓ OpenAI classified object 35: Spoon ($15 ± 50)
+✓ OpenAI classified object 37: Table Runner ($30 ± 50)
+✓ OpenAI classified object 10: Cabinet ($300 ± 50)
+✓ OpenAI classified object 41: Electrical outlet ($15 ± 50)
+✓ OpenAI classified object 16: Faucet ($150 ± 50)
+✓ OpenAI classified object 19: Plant ($30 ± 50)
+✓ OpenAI classified object 7: Cabinet ($300 ± 50)
+✓ OpenAI classified object 14: Dish Towel ($15 ± 50)
+✓ OpenAI classified object 38: Oven ($1200 ± 50)
+✓ OpenAI classified object 26: Colander ($20 ± 50)
+✓ OpenAI classified object 25: Vase ($30 ± 50)
+✓ OpenAI classified object 36: Unknown Object ($0 ± 50)
+✓ OpenAI classified object 39: Microwave ($300 ± 50)
+✓ OpenAI classified object 8: Cabinet ($300 ± 50)
+✓ OpenAI classified object 3: Bar Stool ($100 ± 50)
+✓ OpenAI classified object 34: Window ($300 ± 50)
+✓ OpenAI classified object 17: Vase ($50 ± 50)
+✓ OpenAI classified object 5: Cabinet ($300 ± 50)
+✓ OpenAI classified object 11: Thermostat ($150 ± 50)
+✓ OpenAI classified object 6: Oven ($1200 ± 50)
+✓ OpenAI classified object 24: Vase ($50 ± 50)
+✓ OpenAI classified object 4: Refrigerator ($1200 ± 50)
+✓ OpenAI classified object 2: Microwave ($300 ± 50)
+✓ OpenAI classified object 40: Vase ($50 ± 50)
+✓ OpenAI classified object 1: Bar Stool ($100 ± 50)
+
+Removing semantic duplicates from 41 detections...
+After deduplication: 22 unique assets
+
+Uploading 22 crops to S3 concurrently...
+DEBUG: Saved file to: outputs/crops/1_bar_stool.jpg
+DEBUG: Saved file to: outputs/crops/2_microwave.jpg
+DEBUG: Saved file to: outputs/crops/4_refrigerator.jpg
+DEBUG: Saved file to: outputs/crops/3_bar_stool.jpg
+DEBUG: Saved file to: outputs/crops/6_oven.jpg
+DEBUG: Saved file to: outputs/crops/7_cabinet.jpg
+DEBUG: Saved file to: outputs/crops/5_cabinet.jpg
+DEBUG: Saved file to: outputs/crops/8_cabinet.jpg
+DEBUG: Saved file to: outputs/crops/9_cabinet_door.jpg
+DEBUG: Saved file to: outputs/crops/11_thermostat.jpg
+DEBUG: Saved file to: outputs/crops/10_cabinet.jpg
+DEBUG: Saved file to: outputs/crops/12_bar_stools.jpg
+DEBUG: Saved file to: outputs/crops/15_cabinet.jpg
+DEBUG: Saved file to: outputs/crops/14_dish_towel.jpg
+DEBUG: Saved file to: outputs/crops/17_vase.jpg
+DEBUG: Saved file to: outputs/crops/13_ceramic_bottle.jpg
+DEBUG: Saved file to: outputs/crops/16_faucet.jpg
+DEBUG: Saved file to: outputs/crops/19_plant.jpg
+DEBUG: Saved file to: outputs/crops/20_cabinet.jpg
+DEBUG: Saved file to: outputs/crops/22_rolling_pins.jpg
+DEBUG: Saved file to: outputs/crops/21_countertop.jpg
+DEBUG: Saved file to: outputs/crops/18_colander.jpg
+✓ RESULT 1 (ID: c1d3afda...): YOLO=object, OpenAI=Bar Stool ($100)
+✓ RESULT 2 (ID: 9d6bdca9...): YOLO=object, OpenAI=Microwave ($300)
+✓ RESULT 3 (ID: 2be2e32c...): YOLO=object, OpenAI=Bar Stool ($100)
+✓ RESULT 4 (ID: 3a3157e7...): YOLO=object, OpenAI=Refrigerator ($1200)
+✓ RESULT 5 (ID: de0cc6e9...): YOLO=object, OpenAI=Cabinet ($300)
+✓ RESULT 6 (ID: 74f1f700...): YOLO=object, OpenAI=Oven ($1200)
+✓ RESULT 7 (ID: 07da056c...): YOLO=object, OpenAI=Cabinet ($300)
+✓ RESULT 8 (ID: a6a490cf...): YOLO=object, OpenAI=Cabinet ($300)
+✓ RESULT 9 (ID: f8a4c80c...): YOLO=object, OpenAI=Cabinet Door ($150)
+✓ RESULT 10 (ID: 2aaad90b...): YOLO=object, OpenAI=Cabinet ($300)
+✓ RESULT 11 (ID: c11e8005...): YOLO=object, OpenAI=Thermostat ($150)
+✓ RESULT 12 (ID: f84a3598...): YOLO=object, OpenAI=Bar Stools ($150)
+✓ RESULT 13 (ID: c51bb51f...): YOLO=object, OpenAI=Ceramic Bottle ($25)
+✓ RESULT 14 (ID: 41c718fc...): YOLO=object, OpenAI=Dish Towel ($15)
+✓ RESULT 15 (ID: f55bbbcf...): YOLO=object, OpenAI=Cabinet ($300)
+✓ RESULT 16 (ID: e7bc7084...): YOLO=object, OpenAI=Faucet ($150)
+✓ RESULT 17 (ID: 49920497...): YOLO=object, OpenAI=Vase ($50)
+✓ RESULT 18 (ID: 908765f5...): YOLO=object, OpenAI=Colander ($25)
+✓ RESULT 19 (ID: 3acb3195...): YOLO=object, OpenAI=Plant ($30)
+✓ RESULT 20 (ID: fe4ee5d1...): YOLO=object, OpenAI=Cabinet ($300)
+✓ RESULT 21 (ID: 589d520b...): YOLO=object, OpenAI=Countertop ($1500)
+✓ RESULT 22 (ID: 82bdbe36...): YOLO=object, OpenAI=Rolling Pins ($30)
+Creating visualization with bounding boxes...
+DEBUG: Saved file to: outputs/crops/detection_visualization.jpg
+✓ Visualization saved
+
+============================================================
+✓ Processing complete! Found 22 items
+============================================================
+
+
+============================================================
+Processing uploaded file: kitchen23.jpg
+============================================================
+
+Processing: uploads/kitchen23.jpg
+YOLOe detected 41 objects
+Filtered 41 detections down to 41 unique objects (IoU threshold: 0.5)
+Found 41 objects, classifying with OpenAI...
+OpenAI API error for object 32: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 15: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 10: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 6: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 41: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 36: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 16: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 14: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 1: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 13: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 31: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 29: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 23: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 24: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 5: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 4: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 30: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:35:44] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:23] "GET / HTTP/1.1" 200 -
+
+OpenAI API error for object 11: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 38: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 34: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 26: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 40: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 37: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 33: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 28: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 2: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 19: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 12: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 22: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 20: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 3: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 17: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 21: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 25: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 35: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 39: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 27: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 7: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 8: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 18: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+OpenAI API error for object 9: 429, message='Too Many Requests', url='https://api.openai.com/v1/chat/completions'
+
+Removing semantic duplicates from 41 detections...
+After deduplication: 22 unique assets
+
+Uploading 22 crops to S3 concurrently...
+DEBUG: Saved file to: outputs/crops/4_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/3_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/2_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/5_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/6_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/12_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/13_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/1_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/8_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/7_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/11_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/10_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/9_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/14_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/15_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/17_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/18_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/20_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/19_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/21_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/22_unknown_item.jpg
+DEBUG: Saved file to: outputs/crops/16_unknown_item.jpg
+✓ RESULT 1 (ID: 1381b8e7...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 2 (ID: 74a332d8...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 3 (ID: d5d4d556...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 4 (ID: d7fa2aef...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 5 (ID: bd146211...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 6 (ID: b27a4dd4...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 7 (ID: 6df497ec...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 8 (ID: 2d28aa42...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 9 (ID: a8a82ff1...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 10 (ID: d1c10847...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 11 (ID: ec5ba702...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 12 (ID: 1f0b65c7...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 13 (ID: f46e46b4...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 14 (ID: e4174982...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 15 (ID: 2116d207...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 16 (ID: d61cdd6a...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 17 (ID: 14a0002a...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 18 (ID: eaa3bfa8...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 19 (ID: 9fa08bda...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 20 (ID: 79904033...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 21 (ID: 3c4f9ef8...): YOLO=object, OpenAI=Unknown Item ($100)
+✓ RESULT 22 (ID: 8e7f0115...): YOLO=object, OpenAI=Unknown Item ($100)
+Creating visualization with bounding boxes...
+DEBUG: Saved file to: outputs/crops/detection_visualization.jpg
+✓ Visualization saved
+
+============================================================
+✓ Processing complete! Found 22 items
+============================================================
+
+
+============================================================
+Processing uploaded file: kitchen23.jpg
+============================================================
+
+Processing: uploads/kitchen23.jpg
+YOLOe detected 41 objects
+Filtered 41 detections down to 41 unique objects (IoU threshold: 0.5)
+Found 41 objects, classifying with OpenAI...
+✓ OpenAI classified object 41: Outlet ($20 ± 50)
+✓ OpenAI classified object 12: Bar Stools ($200 ± 50)
+✓ OpenAI classified object 28: Cabinet ($300 ± 50)
+✓ OpenAI classified object 29: Gas Range ($1200 ± 50)
+✓ OpenAI classified object 1: Bar Stool ($150 ± 50)
+✓ OpenAI classified object 32: Ceiling Light ($100 ± 50)
+✓ OpenAI classified object 18: Colander ($25 ± 50)
+✓ OpenAI classified object 33: Kitchen Counter ($1500 ± 50)
+✓ OpenAI classified object 10: Cabinet ($300 ± 50)
+✓ OpenAI classified object 7: Kitchen Cabinet ($300 ± 50)
+✓ OpenAI classified object 35: Spoons ($15 ± 50)
+✓ OpenAI classified object 14: Dish Towel ($15 ± 50)
+✓ OpenAI classified object 22: Rolling Pins ($30 ± 50)
+✓ OpenAI classified object 13: Decorative Bottle ($25 ± 50)
+✓ OpenAI classified object 21: Countertop ($1500 ± 50)
+✓ OpenAI classified object 36: Letter ($50 ± 50)
+✓ OpenAI classified object 16: Faucet ($150 ± 50)
+✓ OpenAI classified object 19: Potted Plant ($30 ± 50)
+✓ OpenAI classified object 34: Window ($300 ± 50)
+✓ OpenAI classified object 24: Vase ($50 ± 50)
+✓ OpenAI classified object 31: Pumpkin ($15 ± 50)
+✓ OpenAI classified object 15: Cabinet ($300 ± 50)
+✓ OpenAI classified object 23: Sealant ($10 ± 50)
+✓ OpenAI classified object 11: Thermostat ($100 ± 50)
+✓ OpenAI classified object 37: Table Runner ($30 ± 50)
+✓ OpenAI classified object 9: Cabinet Door ($150 ± 50)
+✓ OpenAI classified object 20: Cabinet ($300 ± 50)
+✓ OpenAI classified object 6: Oven ($1200 ± 50)
+✓ OpenAI classified object 3: Bar Stool ($150 ± 50)
+✓ OpenAI classified object 40: Vases ($100 ± 50)
+✓ OpenAI classified object 27: Table Setting ($50 ± 50)
+✓ OpenAI classified object 2: Microwave ($300 ± 50)
+✓ OpenAI classified object 25: Vase ($50 ± 50)
+✓ OpenAI classified object 38: Oven ($1200 ± 50)INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "[33mGET /visualizations/detection_visualization.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/2_microwave.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/4_refrigerator.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/7_kitchen_cabinet.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/3_bar_stool.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/6_oven.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/1_bar_stool.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/8_cabinet.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/9_cabinet_door.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/13_decorative_bottle.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/11_thermostat.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/12_bar_stools.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/10_cabinet.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/14_dish_towel.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/15_cabinet.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/16_faucet.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/17_ceramic_jug.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/18_colander.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/19_potted_plant.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/20_cabinet.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/21_countertop.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/22_rolling_pins.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2025 22:37:37] "GET /crops/5_cabinet.jpg HTTP/1.1" 200 -
+start_app.sh: line 4: 96503 Killed: 9               ./venv/bin/python app.py

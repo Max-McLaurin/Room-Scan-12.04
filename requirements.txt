@@ -1,0 +1,24 @@
+# Flask Web Framework
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Computer Vision & ML
+opencv-python==4.8.1.78
+torch>=2.5.0
+torchvision>=0.20.0
+ultralytics>=8.3.0
+huggingface-hub>=0.19.4
+
+# Image Processing
+Pillow>=10.1.0
+numpy>=1.26.2
+
+# Async HTTP
+aiohttp>=3.9.1
+
+# OpenAI (for classification)
+openai>=1.0.0
+
+# Optional: HEIC/HEIF support
+# Uncomment if you need HEIC/HEIF image support
+# pillow-heif==0.13.1

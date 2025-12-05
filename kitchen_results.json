@@ -1,0 +1,272 @@
+{
+  "detected_assets": [
+    {
+      "bbox": [
+        2042,
+        2744,
+        2755,
+        3953
+      ],
+      "confidence": 0.9656351804733276,
+      "crop_url": "/crops/1_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        4278,
+        1395,
+        4986,
+        1796
+      ],
+      "confidence": 0.9629884958267212,
+      "crop_url": "/crops/2_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        2552,
+        2878,
+        3473,
+        3987
+      ],
+      "confidence": 0.9617229104042053,
+      "crop_url": "/crops/3_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        1274,
+        1293,
+        2317,
+        3410
+      ],
+      "confidence": 0.9613261818885803,
+      "crop_url": "/crops/4_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        1280,
+        935,
+        2225,
+        1397
+      ],
+      "confidence": 0.882107138633728,
+      "crop_url": "/crops/5_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        4220,
+        2292,
+        4986,
+        3063
+      ],
+      "confidence": 0.8652021288871765,
+      "crop_url": "/crops/6_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3945,
+        2215,
+        4204,
+        2827
+      ],
+      "confidence": 0.8178226351737976,
+      "crop_url": "/crops/7_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        4275,
+        1172,
+        4959,
+        1435
+      ],
+      "confidence": 0.8102242350578308,
+      "crop_url": "/crops/8_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        4044,
+        1250,
+        4268,
+        1806
+      ],
+      "confidence": 0.7484233975410461,
+      "crop_url": "/crops/9_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3020,
+        1366,
+        3349,
+        1820
+      ],
+      "confidence": 0.7406600713729858,
+      "crop_url": "/crops/10_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        5548,
+        1541,
+        6000,
+        1870
+      ],
+      "confidence": 0.6344451904296875,
+      "crop_url": "/crops/11_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        2331,
+        2292,
+        3886,
+        3816
+      ],
+      "confidence": 0.5987340807914734,
+      "crop_url": "/crops/12_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3072,
+        2097,
+        3191,
+        2343
+      ],
+      "confidence": 0.549627959728241,
+      "crop_url": "/crops/13_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        4471,
+        2325,
+        4655,
+        2661
+      ],
+      "confidence": 0.5438814759254456,
+      "crop_url": "/crops/14_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3351,
+        1342,
+        3611,
+        1822
+      ],
+      "confidence": 0.5332671403884888,
+      "crop_url": "/crops/15_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3737,
+        1881,
+        3863,
+        2142
+      ],
+      "confidence": 0.5327537059783936,
+      "crop_url": "/crops/16_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        2892,
+        1937,
+        3066,
+        2331
+      ],
+      "confidence": 0.48276767134666443,
+      "crop_url": "/crops/17_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        4089,
+        2045,
+        4243,
+        2159
+      ],
+      "confidence": 0.4377671480178833,
+      "crop_url": "/crops/18_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3754,
+        1580,
+        3866,
+        1777
+      ],
+      "confidence": 0.39707839488983154,
+      "crop_url": "/crops/19_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        429,
+        742,
+        1269,
+        1726
+      ],
+      "confidence": 0.35826173424720764,
+      "crop_url": "/crops/20_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        2460,
+        2155,
+        2820,
+        2316
+      ],
+      "confidence": 0.3089430630207062,
+      "crop_url": "/crops/21_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    },
+    {
+      "bbox": [
+        3167,
+        1921,
+        3305,
+        2115
+      ],
+      "confidence": 0.26346853375434875,
+      "crop_url": "/crops/22_unknown_item.jpg",
+      "estimated_value": 100,
+      "name": "Unknown Item"
+    }
+  ],
+  "success": true,
+  "total_count": 22,
+  "total_value": 2200,
+  "visualization_url": "/visualizations/detection_visualization.jpg"
+}
